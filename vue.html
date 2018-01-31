@@ -1,0 +1,42 @@
+<div id="app">
+ 
+  
+    First Number &nbsp &nbsp &nbsp
+    <input type="text"  v-model="firstNumber">
+ 
+  <br>
+    Second Number
+    <input type="text" v-model="secondNumber"> &nbsp &nbsp &nbsp &nbsp
+<!-- <input type="text" v-model="operation"><br> -->
+  <select v-model="operation">
+  <option value="+">Sum</option>
+  <option value="-">Substruction</option>
+  <option value="*">Multiplication</option>
+  <option value="/">Division</option>
+</select>
+ <!-- <input type="radio" v-model="operation" value="+"> plus
+  <input type="radio" v-model="operation" value="-"> min
+  <input type="radio" v-model="operation" value="*"> mul
+  <input type="radio" v-model="operation" value="/"> div -->
+  
+  
+     &nbsp &nbsp &nbsp &nbsp
+    <h4>result : 
+      <span v-if="operation==='+'">{{summetion}}</span>
+      <span v-else-if="operation==='-'">{{sub}}</span>
+      <span v-else-if="operation==='*'">{{mul}}</span>
+      <span v-else-if="operation==='/'">{{div}}</span>
+      
+      
+      
+      
+    </h4>
+    <br> <br>&nbsp &nbsp &nbsp &nbsp
+  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <button type="submit" class="btn btn-default" v-on:click="getFormvalue">=</button>
+    
+    
+ 
+  
+  
+  <div>
