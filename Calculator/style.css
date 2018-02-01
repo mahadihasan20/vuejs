@@ -1,0 +1,41 @@
+#app {
+    width: 300px;
+    height:500px;
+    margin: 20px auto;
+    background-color: #e3e3e3;
+  }
+  .mid{
+   
+    margin-left: 28px;
+    padding-top:30px;
+ 
+  }
+  
+  .mid input{
+    width: 250px;
+    height:50px;
+    background-color: #404040;
+    font-size: 25px;
+    color:#fff;
+  }
+  .mid button{
+    width: 59px;
+    height:40px;
+    background-color: #a0a0a0;
+    font-size: 18px;
+    
+  }
+  #zero{
+    width:121px;
+  }
+  
+  #operator{
+    background-color: orange;
+    font-size: 18px;
+  }
+  
+  
+  #cut{
+    color:#C1080E;
+    font-weight: bold;;
+  }

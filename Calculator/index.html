@@ -1,0 +1,29 @@
+<div id="app">
+  
+    <div class="mid">
+      
+      
+    
+    <input type="text"  v-model="input"><br><br>
+    <button type="button" value="AC" v-on:click="cut" id="cut">C</button>
+    <button type="button" value="+/-" v-on:click="reverse">+/-</button>
+    <button type="button" value="%" v-on:click="persent">%</button>
+    <button type="button" value="/" v-on:click="key('/')" id="operator">/</button><br><br>
+    <button type="button" value="7" v-on:click="key(7)">7</button>
+    <button type="button" value="8" v-on:click="key(8)">8</button>
+    <button type="button" value="9" v-on:click="key(9)">9</button>
+    <button type="button" value="*" v-on:click="key('*')" id="operator">*</button><br><br>
+    <button type="button" value="4" v-on:click="key(4)">4</button>
+    <button type="button" value="5" v-on:click="key(5)">5</button>
+    <button type="button" value="6" v-on:click="key(6)">6</button>
+    <button type="button" value="-" v-on:click="key('-')" id="operator">-</button><br><br>
+    <button type="button" value="1" v-on:click="key(1)">1</button>
+    <button type="button" value="2" v-on:click="key(2)">2</button>
+    <button type="button" value="3" v-on:click="key(3)">3</button>
+    <button type="button" value="+" v-on:click="key('+')" id="operator">+</button><br><br>
+    <button type="button" value="0" v-on:click="key(0)" id="zero">0</button>
+    <button type="button" value="point" v-on:click="key('.')">.</button>
+    <button type="button" value="equal" v-on:click="equal" id="operator">=</button>
+      </div>
+    
+  </div>
